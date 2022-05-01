@@ -1,0 +1,13 @@
+- 👋 Hi, I’m @SV-Engineer
+- 👀 I’m interested in ...
+- Writing Apps, Games, and Embedded Systems
+- 🌱 I’m currently learning ...
+- Object Oriented Python on Raspbian OS
+- 💞️ I’m looking to collaborate on ...
+- Embedded Projects
+- 📫 How to reach me ...
+systemverilogengineer@gmail.com
+<!---
+SV-Engineer/SV-Engineer is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+You can click the Preview link to take a look at your changes.
+--->
