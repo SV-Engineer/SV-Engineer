@@ -9,6 +9,14 @@ Location
 Contact
 : systemverilogengineer@gmail.com
 
+## Notes:
+1. If you have found this page and are wondering why all of the repositories seem so sparse, I do have an answer. The answer is that I previously had a repository associated with my university email. That email has been deleted. For one, I didn't anticipate that git would lock me out and for two I truthfully did neglect it to some extent. One part of me wants to try and recover it and the other takes this as an opportunity to consolidate and rewrite. I cannot truthfully say I understood, let alone followed, good coding practices in university. The only code I believe worth recovering from that period includes:
+  *  My independent implementation of an RTOS on an ARM M4 uProcessor (C).
+  *  My implementation of a MIPS 32-bit processor including pipelining, data forwarding and hazard detection (VHDL).
+  *  My various machine learning algorithms implemented in python with pytorch.
+
+2. Some of the above mentioned were whole courses worth of work. Even if I did reproduce the code, some of it would likely have to remain private. Most importantly out of respect for the professors that enabled me to learn and secondarily because of enabling current students to violate the plagiarism code of conduct standards.
+
 ## Coding Languages
 * Embedded C
 * Some ARM Assembly
