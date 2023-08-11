@@ -4,18 +4,18 @@ Name
 : Austin (@SV-Engineer)
 
 Location
-: Central United States
+: Dallas, Tx
 
 Contact
 : systemverilogengineer@gmail.com
 
 ## Notes:
 1. If you have found this page and are wondering why all of the repositories seem so sparse, I do have an answer. The answer is that I previously had a repository associated with my university email. That email has been deleted. For one, I didn't anticipate that git would lock me out and for two I truthfully did neglect it to some extent. One part of me wants to try and recover it and the other takes this as an opportunity to consolidate and rewrite. I cannot truthfully say I understood, let alone followed, good coding practices in university. The only code I believe worth recovering from that period includes:
-   *  My independent implementation of an RTOS on an ARM M4 uProcessor (C).
+   *  My independent implementation of an RTOS on an ARM M4 uProcessor. This was done in Mixed ARM Assembly and C.
    *  My implementation of a MIPS 32-bit processor including pipelining, data forwarding and hazard detection (VHDL).
    *  My various machine learning algorithms implemented in python with pytorch.
 
-2. Some of the above mentioned were whole courses worth of work. Even if I did reproduce the code, some of it would likely have to remain private. Most importantly out of respect for the professors that enabled me to learn and secondarily because of enabling current students to violate the plagiarism code of conduct standards.
+2. Some of the above mentioned were whole courses worth of work. Even if I did reproduce the code, some of it would likely have to remain private. Most importantly out of respect for the professors that enabled me to learn and secondarily (but not any less important) because of enabling current students to violate the plagiarism code of conduct standards.
 
 ## Coding Languages
 * Embedded C
@@ -37,3 +37,23 @@ My heroes include:
   * Neil Degrasse-Tyson and Bill Nye both in their patience as they try to educate as many people as they can.
 
 I originally set out to "change the world" in whatever way I could manifest after reading Nikola Tesla's autobiography [My Inventions](https://en.wikipedia.org/wiki/My_Inventions:_The_Autobiography_of_Nikola_Tesla). What that book meant to me was that even if we are struggling with, whatever it may be, we can still achieve. From there I went forward into the adventure of college. A fool with an open mind. In school, high school and before, I truly can claim the title of uneducated fool. I knew very little while being immensely adversarial. The hall-mark of a true fool. I took the math aptitude test, and tested at the lowest level offered at the community college; Intermediate Algebra. I knew how to add and subtract and multiply, though division I required a calculator. To be honest, I still don't know my times tables and I have to look up how long division works everytime it becomes necessary (looking at you partial fraction decomposition). Yet despite all of this, at some point or other, I demonstrated competency in Vector Calculus, Differential Equations, Physics, Circuit Analysis, and so much more.
+
+# What Is Important To Me With Respect To Writing Code
+I can summarize this topic in one main idea:
+
+&nbsp;&nbsp;**Long term sustainability through effective organization**.
+
+What does this mean? The idea stated above can be divided into (at least) three categories. Maintaninability, Readability and Expandability. Quite literally, this repository was created with the intent to develop my skills in these ideas through self study; including reading the code of others. Furthermore, I am trying to understand what the empirically agreed upon industry standards are on this topic rather than relying on anectdotal evidence. The following sub-sections will dive deeper into these three concepts and attempt to provide examples of what I understand goes against the spirit of the ideas and examples that are in compliance with the ideas.
+
+## Maintainability
+Maintainability to me means how easy is it to make a change in the code base when the understanding of the design specification changes or god forbid _the design specification changes_.
+
+## Readability 
+By readability I intend to imply directly the meaning of the word. How readable is the code I am producing? Will it be easy for someone to understand the intent of my logic? Will they spend hours puzzling over what I have done because I failed to communicate effectively through documentation how it works?
+
+## Expandability
+The term expandability can be further divided into two ideas. 
+    
+  1. Is the piece of code I am writing generic enough to be reused when the associated logic is called for without being so generic that the meaning is lost?
+    
+  2. Does the code I've written avoid things such as global variables and hard-coded values?
