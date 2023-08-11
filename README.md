@@ -43,13 +43,13 @@ I can summarize this topic in one main idea:
 
 &nbsp;&nbsp;**Long term sustainability through effective organization**.
 
-What does this mean? The idea stated above can be divided into (at least) three categories. Maintaninability, Readability and Expandability. Quite literally, this repository was created with the intent to develop my skills in these ideas through self study; including reading the code of others. Furthermore, I am trying to understand what the empirically agreed upon industry standards are on this topic rather than relying on anectdotal evidence. The following sub-sections will dive deeper into these three concepts and attempt to provide examples of what I understand goes against the spirit of the ideas and examples that are in compliance with the ideas.
+What does this mean? The idea stated above can be divided into (at least) three categories. Maintainability, Readability and Expandability. Quite literally, this repository was created with the intent to develop my skills in these ideas through self-study. This includes reading the code of others. Furthermore, I am trying to understand what the empirically agreed upon industry standards are on this topic rather than relying on anectdotal evidence. The following sub-sections will dive deeper into these three concepts and attempt to provide examples of what I understand goes against the spirit of the ideas and examples that are in compliance with the ideas.
 
 ## Maintainability
 Maintainability to me means how easy is it to make a change in the code base when the understanding of the design specification changes or god forbid _the design specification changes_.
 
 ## Readability 
-By readability I intend to imply directly the meaning of the word. How readable is the code I am producing? Will it be easy for someone to understand the intent of my logic? Will they spend hours puzzling over what I have done because I failed to communicate effectively through documentation how it works?
+By readability I intend to imply directly the meaning of the word. How readable is the code I am producing? Will it be easy for someone to understand the intent of my logic? Will they spend hours puzzling over what I have done because I failed to communicate effectively through coherency, comments and documentation how it works?
 
 ## Expandability
 The term expandability can be further divided into two ideas. 
