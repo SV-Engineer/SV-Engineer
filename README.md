@@ -54,6 +54,7 @@ My heroes include:
   * Albert Einstein in his pure force of will to consider all wrong possibilities until he got to the correct answer.
   * Christopher Hitchens in his endeavor to encourage people to think critically and his sincere compassion for others.
   * Neil Degrasse-Tyson and Bill Nye both in their patience as they try to educate as many people as they can.
+  * Sophie Scholl in her fortitude to stand up; even when almost no one else would.
 
 I originally set out to "change the world" in whatever way I could manifest after reading Nikola Tesla's autobiography [My Inventions](https://en.wikipedia.org/wiki/My_Inventions:_The_Autobiography_of_Nikola_Tesla). What that book meant to me was that even if we are struggling with, whatever it may be, we can still achieve. From there I went forward into the adventure of college. A fool with an open mind. In school, high school and before, I truly can claim the title of uneducated fool. I knew very little while being immensely adversarial. The hall-mark of a true fool. I took the math aptitude test, and tested at the lowest level offered at the community college; Intermediate Algebra. I knew how to add and subtract and multiply, though division I required a calculator. To be honest, I still don't know my times tables and I have to look up how long division works everytime it becomes necessary (looking at you partial fraction decomposition). Yet despite all of this, at some point or other, I demonstrated competency in Vector Calculus, Differential Equations, Physics, Circuit Analysis, and so much more.
 
