@@ -83,3 +83,45 @@ The term expandability can be further divided into two ideas.
   1. Is the piece of code I am writing generic enough to be reused when the associated logic is called for without being so generic that the meaning is lost?
     
   2. Does the code I've written avoid things such as global variables and hard-coded values?
+
+# Problem Solving Philosophy
+This philosophy assumes that a coherent definition of a problem has been provided to the developer. In the case of a Design Specification, the requirements must all have clear definition. In general, no one should be developing in a professional environment, if a complete definition of the problem to be solved does not exist. The goals are:
+  * Maintainability
+  * Minimization of Technical Debt
+  * Avoidance of duplication of effort
+  * Reusability
+
+## Step 0: Understanding The Problem
+Complex questions are deserving of complex answers, at least initially. A reliable method of solving problems is the "brute-force-and-difficulty" (BFAD) method. The BFAD method certainly has its own draw backs and should be reserved for understanding difficult problems. If a developer needs to perform a simple problem such as writing a for loop to interate through a list of numbers and find the max value, they likely don't require BFAD. Because simple problems by their very nature are simple to solve, they are not within the scope of this discussion.
+
+What is meant when suggesting BFAD? Perhaps the developer should be employing some bad coding practices[^1]. Confined to a prototyping file on a local branch. No functions, iteration ignored, no verbose comments. Spend the initial energy on writing bad code that solves the problem.
+
+Now, if I've lost you at this point, allow me to bring you back. This methodology has a hard requirement of discipline. For example, the scope of employing bad practice shall be limited to a single prototyping file such that the case of committing garbage to a remote repository is avoided. The following sections will further define the discipline required to use BFAD and how avoidance of garbage in the remote shall be achieved.
+
+## Step 1: Analysis - Building Off The Bad Code
+Now that a base case or cases of the problem have been solved, stop writing code and start analyzing it. Make a commit on a local dev branch to create a checkpoint. If working with others, keep in mind if a rebase of your local branch becomes necessary. Take some time to use a tool such as Visio to make a flow chart of what the code does now. Then copy the flow chart and start modifying it into a state that the code should be in. If a flow chart can't be made, write some pseudo code of the desired final state.
+
+As you analyze the bad code you wrote, ask yourself some or all of the following:
+  * What code did I copy paste and how can I parameterize it and reuse it?
+  * Do I need to `typedef` a data structure for complex data manipulation?
+  * What is the common case of any `if-else` blocks?
+  * Did any edge cases become apparent when working through it initially?
+  * What are the discrete component steps to solving this problem?
+  * What information am I missing to make this succinct?
+  * Is the list of files I predict that require an update complete?
+
+## Step 2: Abstraction and Documentation
+At this point, it's time to practice the discipline planned for in the previous step. Abstract the pieces into functions and / or macros as necessary. Each function shall either perform a simple action, or call multiple functions to enable more complex behavior. Leverage the tools such as pointers (to include passing by reference), return values for error checking, and verbose logging.
+
+If you aren't using a tool such as [Doxygen](https://www.doxygen.nl/) to automate the documentation generation, you should be. It is free for individuals and most[^2] companies have it on their Linux systems. This step also has expectation that the developer is documenting their solution reasonably coherently so that others are enabled to maintain the code in the long-term. A solution in the short-term that results in a module rewrite in the future is a bad solution; anything that leads to duplication of effort should be avoided if possible. There must be balance between short-term and long-term planning when managing a code base. If all decisions made are for the short term and no concern for the long term, the code base will reach a tipping point where all development time is spent on maintaining it and putting out fires caused by technical debt. Naturally the corollary is that if all effort is spent on long term planning that leads to analysis paralysis that results in goals not being met and deliverables left incomplete, the developer is at the opposite extrema.
+
+With that subject discussed, let's turn our attention back to abstraction in the context of the feature and/or solution development. Abstraction is good. Too much abstraction is bad in the same way that no abstraction is bad. Each abstraction beyond 2 layers[^3] shall be evaluated for potential technical debt and necessity. Abstraction layers shall be limited to 4; anything beyond 3 layers shall face heavy scrutiny. The reader should be able to open the header file or package and quickly understand what the abstracted data types are composed of. This applies less to the project and code base as a whole, where modules may exist with their own dependency tree. The goal is to compartmentalize the abstraction.
+
+## TL;DR
+1. Brute force and difficulty the base case and note any edge cases that come up.
+2. Identify the component steps from the base case.
+3. Abstract the component steps into reusable pieces; where each abstraction is dependent on the previous abstractions.
+
+[^1]: This methodology does not necessarily apply to any sanity checking unit tests being developed in tandem with solving the problem.
+[^2]: This part of the statement is anectodal understanding.
+[^3]: The built-in library types are the 0th layer.
