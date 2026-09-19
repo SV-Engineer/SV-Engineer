@@ -9,7 +9,7 @@ Dallas, Tx
 systemverilogengineer@gmail.com
 
 ## Resume
-For an unredacted version of my [resume](./RESUME/index.html), please reach out to my contact email above.
+For an unredacted version of my [resume](https://sv-engineer.github.io/SV-Engineer/), please reach out to my contact email above.
 
 # Coding Languages
 * Embedded C
