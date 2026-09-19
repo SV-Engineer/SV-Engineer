@@ -9,7 +9,7 @@ Dallas, Tx
 systemverilogengineer@gmail.com
 
 ## Resume
-For an unredacted version of my [resume](./SW/resume.html), please reach out to my contact email above.
+For an unredacted version of my [resume](./RESUME/resume.html), please reach out to my contact email above.
 
 # Coding Languages
 * Embedded C
