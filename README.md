@@ -9,7 +9,7 @@ Dallas, Tx
 systemverilogengineer@gmail.com
 
 ## Resume
-To protect my privacy, some information has been omitted from my [public resume](https://sv-engineer.github.io/SV-Engineer/). Please contact me at the email above to request a an unredacted copy.
+To protect my privacy, some information has been omitted from my [public resume](https://sv-engineer.github.io/SV-Engineer/). Please contact me at the email above to request an unredacted copy.
 
 # Coding Languages
 * Embedded C
