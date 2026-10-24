@@ -1,31 +1,100 @@
-<div align="center">
+<style>
+  @page {
+    size: letter portrait;
+    margin: 0.28in 0.4in;
+  }
+  body, .resume-container {
+    font-size: 12pt;
+    line-height: 1.22;
+  }
+  .resume-container h2 {
+    font-size: 13.5pt;
+    margin-top: 4px;
+    margin-bottom: 3px;
+  }
+  .resume-container h4 {
+    font-size: 12pt;
+    margin-top: 3px;
+    margin-bottom: 2px;
+  }
+  .resume-container p {
+    margin: 2px 0;
+  }
+  .resume-container ul {
+    margin: 0;
+    padding-left: 18px;
+  }
+  .resume-container li {
+    margin-bottom: 1px;
+  }
+</style>
 
-  <h2 style="margin-bottom: 5px; margin-top: 5px; display: flex; align-items: center; text-align: center; gap: 16px;">
+<div align="center" class="resume-container">
+
+  <h2 style="margin-bottom: 3px; margin-top: 3px; display: flex; align-items: center; text-align: center; gap: 16px;">
     <span style="flex: 1; border-bottom: 2px solid rgba(0, 0, 0, 0.5);"></span>
     <span id="person-name">[NAME]</span>
     <span style="flex: 1; border-bottom: 2px solid rgba(0, 0, 0, 0.5);"></span>
   </h2>
   <span id="private-email">[REDACTED@gmail.com]</span> &nbsp;&#9672;&nbsp; <span id="phone-number">[(***)-***-****]</span> &nbsp;&#9672;&nbsp; <span id="address">[ADDRESS]</span><br>
-  https://github.com/sv-Engineer/
+  https://github.com/sv-Engineer/ &nbsp;&#9672;&nbsp; www.linkedin.com/in/austin-harrison-35a9772b5
 
-  <h2 style="margin-bottom: 5px; margin-top: 5px; display: flex; align-items: center; text-align: center; gap: 16px;">
+  <h2 style="margin-bottom: 3px; margin-top: 4px; display: flex; align-items: center; text-align: center; gap: 16px;">
     <span style="flex: 1; border-bottom: 2px solid rgba(0, 0, 0, 0.5);"></span>
-    Professional Experience
+    Professional Summary
     <span style="flex: 1; border-bottom: 2px solid rgba(0, 0, 0, 0.5);"></span>
   </h2>
-  <h3 style="margin-bottom: 5px; margin-top: 5px;"><span id="company-name">[COMPANY]</span></h3>
-  January 2021 - Present
+  <div align="left">
+    <p style="margin: 2px 0;">
+      Firmware Architect specializing in <b>bare-metal</b> architecture and hardware-software interfaces for high-reliability embedded systems and SoCs. Proven track record leading low-level driver development, <b>register-boundary</b> co-verification, custom linker memory partitioning (.bss, .data, .stack), and deterministic interrupt pipelines across multiple silicon spins. Experienced in mixed-signal noise mitigation (AMS/GLS) and rigorous functional safety.
+    </p>
+  </div>
+
+  <h2 style="margin-bottom: 3px; margin-top: 4px; display: flex; align-items: center; text-align: center; gap: 16px;">
+    <span style="flex: 1; border-bottom: 2px solid rgba(0, 0, 0, 0.5);"></span>
+    Skills
+    <span style="flex: 1; border-bottom: 2px solid rgba(0, 0, 0, 0.5);"></span>
+  </h2>
+  
+  <div style="display: flex; gap: 16px;">
+    <div style="flex: 1;">
+      <div align="left">
+        <ul style="margin: 0; padding-left: 18px;">
+          <li><b>Languages & Verification:</b> Embedded C, SystemVerilog (OOP Testbenches), RISC Assembly, AMS/GLS Co-Simulation, Python, Shell (Bash).</li>
+          <li><b>Firmware & Drivers:</b> <b>Bare-Metal</b> Architecture, Linker Scripts (.bss, .data, .stack), Interrupt-Driven system design, MMIO Drivers, Serial Protocols (I2C, SPI, UART), RTOS.</li>
+          <li><b>Software Engineering:</b> OOP Architecture, CI/CD (Bitbucket/Git), SDLC.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div style="flex: 1;">
+      <div align="left">
+        <ul style="margin: 0; padding-left: 18px;">
+          <li><b>Hardware Debug & Instruments:</b> SWD/JTAG Debuggers, Oscilloscopes, Logic State Analyzers (LSA), Mixed-Signal Noise Analysis, Function Generators, Signal Injection.</li>
+          <li><b>Safety & Standards:</b> ISO 26262 (ASIL), <span id="work-item-2">[REDACTED]</span>, Hardware Watchdogs, SEC-DED and CRC protection for memory.</li>
+          <li><b>Methodologies & Tools:</b> Agile / SCRUM, Jira (REST API, JQL, Automation), Systems Requirements & Verification Analysis.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <h2 style="margin-bottom: 3px; margin-top: 4px; display: flex; align-items: center; text-align: center; gap: 16px;">
+    <span style="flex: 1; border-bottom: 2px solid rgba(0, 0, 0, 0.5);"></span>
+    <span id="company-name">Professional Experience at [COMPANY]</span>
+    <span style="flex: 1; border-bottom: 2px solid rgba(0, 0, 0, 0.5);"></span>
+  </h2>
+  <div style="margin-bottom: 3px; margin-top: 1px;">January 2021 - Present</div>
 
   <!-- PARENT FLEX CONTAINER: Keeps both roles side-by-side -->
   <div style="display: flex; gap: 16px; align-items: flex-start;">
     
     <!-- COLUMN 1: Lead Firmware Engineer -->
     <div style="flex: 1;">
-      <h4 style="margin-bottom: 5px; margin-top: 5px;">Lead Firmware Engineer</h4>
+      <h4 style="margin-bottom: 2px; margin-top: 2px;">Lead Firmware Engineer</h4>
       <div align="left">
-        <ul style="margin: 0; padding-left: 20px;">
-          <li>Engineered bare-metal C firmware for ARM Cortex-M microcontrollers, architecting low-level drivers, interrupt handlers, and MMIO register accesses across 3 device families (11 unique spins).</li>
-          <li>Optimized static memory allocations to operate within strict SRAM/ROM constraints (1 kB SRAM stack/data, 20 kB ROM program memory).</li>
+        <ul style="margin: 0; padding-left: 18px;">
+          <li>Engineered <b>bare-metal</b> C firmware for ARM Cortex-M microcontrollers, architecting <b>low-level</b> drivers, interrupt handlers, and MMIO register accesses across a device family with 11 unique spins.</li>
+          <li>Architected custom linker scripts to partition and budget .bss, .data, and .stack memory sections, optimizing static memory allocations to operate within strict SRAM/ROM constraints (1 kB SRAM stack/data, 20 kB ROM program memory).</li>
           <li>Accelerated sprint velocity by applying SCRUM methodologies, reducing development roadblocks from 3–7 days down to &le; 2 days.</li>
           <li>Implemented ISO 26262 functional safety mechanisms, designing deterministic fault-detection routines and software-side redundancy checks to satisfy strict ASIL integrity requirements.</li>
           <li>Delivered bi-weekly production baselines meeting real-time constraints (1 ms latency from analog read to peripheral output; 2<sup>-16</sup> precision without dedicated FPU).</li>
@@ -35,63 +104,34 @@
 
     <!-- COLUMN 2: Digital Design Engineer -->
     <div style="flex: 1;">
-      <h4 style="margin-bottom: 5px; margin-top: 5px;">Digital Design Engineer</h4>
+      <h4 style="margin-bottom: 2px; margin-top: 2px;">Digital Design Engineer</h4>
       <div align="left">
-        <ul style="margin: 0; padding-left: 20px;">
+        <ul style="margin: 0; padding-left: 18px;">
           <li>Co-designed hardware-software integration layers to map hardware IRQ lines to C-based ISRs.</li>
           <li>Drove hardware-software co-verification across multiple SoC silicon spins, authoring low-level C validation suites to exercise custom IP blocks and verify MMIO register boundaries.</li>
-          <li>Co-developed 3 IP blocks compliant with SAE and ISO automotive safety standards.</li>
-          <li>Defined hardware safety requirements including hardware watchdog timers, stack overflow detection, SEC-DED memory protection, and CRC checks for critical configuration blocks.</li>
+          <li>Investigated mixed-signal silicon noise injection via AMS/GLS co-simulation workflows, analyzing low-pass filter bandwidth adjustments and executing clock tree skew ECOs to eliminate SAR ADC sampling interference.</li>
+          <li>Co-developed 3 IP blocks compliant with SAE/ISO (automotive safety standards), by collaborating in the definition of hardware safety mechanisms (watchdogs, stack overflow detection, SEC-DED memory, CRC protection).</li>
           <li>Developed a reusable <span id="work-item-1">[REDACTED]</span> testbench module in <b>SystemVerilog</b> utilizing OOP design principles (polymorphism, factory patterns), threading, and interprocess communication.</li>
-          <li>Defined test scenarios with explicit success metrics across 5 IP blocks for verification handoff.</li>
         </ul>
       </div>
     </div>
   </div>
 
-  <h2 style="margin-bottom: 5px; margin-top: 5px; display: flex; align-items: center; text-align: center; gap: 16px;">
-    <span style="flex: 1; border-bottom: 2px solid rgba(0, 0, 0, 0.5);"></span>
-    Skills
-    <span style="flex: 1; border-bottom: 2px solid rgba(0, 0, 0, 0.5);"></span>
-  </h2>
-  
-  <div style="display: flex; gap: 16px;">
-    <div style="flex: 1;">
-      <div align="left">
-        <ul style="margin: 0; padding-left: 20px;">
-          <li><b>Languages & Verification:</b> Embedded C, SystemVerilog (OOP Testbenches), C/C++, RISC Assembly, Python, Shell (Bash).</li>
-          <li><b>Firmware & Drivers:</b> Bare-Metal Architecture, Interrupt-Driven ISRs, MMIO Drivers, Serial Protocols (I2C, SPI, UART), RTOS.</li>
-          <li><b>Software Engineering:</b> OOP Patterns (Polymorphism, Inheritance, Composition, Factory), CI/CD (Bitbucket/Git), SDLC.</li>
-        </ul>
-      </div>
-    </div>
-
-    <div style="flex: 1;">
-      <div align="left">
-        <ul style="margin: 0; padding-left: 20px;">
-          <li><b>Hardware Debug & Instruments:</b> SWD/JTAG Debuggers, Oscilloscopes, Logic State Analyzers (LSA), Function Generators, Signal Injection.</li>
-          <li><b>Safety & Standards:</b> ISO 26262 (ASIL), <span id="work-item-2">[REDACTED]</span>, Hardware Watchdogs, SEC-DED Memory, CRC Protection.</li>
-          <li><b>Methodologies & Tools:</b> Agile / SCRUM, Jira (REST API, JQL, Automation), Systems Requirements & Verification Analysis.</li>
-        </ul>
-      </div>
-    </div>
-  </div>
-
-  <h2 style="margin-bottom: 5px; margin-top: 5px; display: flex; align-items: center; text-align: center; gap: 16px;">
+  <h2 style="margin-bottom: 3px; margin-top: 4px; display: flex; align-items: center; text-align: center; gap: 16px;">
     <span style="flex: 1; border-bottom: 2px solid rgba(0, 0, 0, 0.5);"></span>
     Education
     <span style="flex: 1; border-bottom: 2px solid rgba(0, 0, 0, 0.5);"></span>
   </h2>
   <div style="display: flex; gap: 5px;">
     <div style="flex: 1;">
-    <h3 style="margin-bottom: 2px;margin-top: 5px;"><span id="education-university">[UNIVERSITY]</span></h3>
+    <h3 style="margin-bottom: 1px; margin-top: 2px;"><span id="education-university">[UNIVERSITY]</span></h3>
       <div align = "center">
         BS in Electrical Engineering
       </div>
     </div>
   
     <div style="flex: 1;">
-    <h3 style="margin-bottom: 2px;margin-top: 5px;"><span id="education-community-college">[STATE COLLEGE]</span></h3>
+    <h3 style="margin-bottom: 1px; margin-top: 2px;"><span id="education-community-college">[STATE COLLEGE]</span></h3>
       <div align = "center">
         Associate in Arts
       </div>
