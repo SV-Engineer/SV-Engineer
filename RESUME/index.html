@@ -12,6 +12,11 @@
     margin-top: 4px;
     margin-bottom: 3px;
   }
+  .resume-container h3 {
+    font-size: 12.5pt;
+    margin-top: 3px;
+    margin-bottom: 2px;
+  }
   .resume-container h4 {
     font-size: 12pt;
     margin-top: 3px;
@@ -83,38 +88,20 @@
     <span id="company-name">Professional Experience at [COMPANY]</span>
     <span style="flex: 1; border-bottom: 2px solid rgba(0, 0, 0, 0.5);"></span>
   </h2>
-  <div style="margin-bottom: 3px; margin-top: 1px;">January 2021 - Present</div>
+  <h3 style="margin-bottom: 1px; margin-top: 2px;">Lead Firmware Engineer &amp; Digital Design Engineer</h3>
+  <div style="margin-bottom: 4px; margin-top: 1px;">January 2021 &ndash; Present</div>
 
-  <!-- PARENT FLEX CONTAINER: Keeps both roles side-by-side -->
-  <div style="display: flex; gap: 16px; align-items: flex-start;">
-    
-    <!-- COLUMN 1: Lead Firmware Engineer -->
-    <div style="flex: 1;">
-      <h4 style="margin-bottom: 2px; margin-top: 2px;">Lead Firmware Engineer</h4>
-      <div align="left">
-        <ul style="margin: 0; padding-left: 18px;">
-          <li>Engineered <b>bare-metal</b> C firmware for ARM Cortex-M microcontrollers, architecting <b>low-level</b> drivers, interrupt handlers, and MMIO register accesses across a device family with 11 unique spins.</li>
-          <li>Architected custom linker scripts to partition and budget .bss, .data, and .stack memory sections, optimizing static memory allocations to operate within strict SRAM/ROM constraints (1 kB SRAM stack/data, 20 kB ROM program memory).</li>
-          <li>Accelerated sprint velocity by applying SCRUM methodologies, reducing development roadblocks from 3–7 days down to &le; 2 days.</li>
-          <li>Implemented ISO 26262 functional safety mechanisms, designing deterministic fault-detection routines and software-side redundancy checks to satisfy strict ASIL integrity requirements.</li>
-          <li>Delivered bi-weekly production baselines meeting real-time constraints (1 ms latency from analog read to peripheral output; 2<sup>-16</sup> precision without dedicated FPU).</li>
-        </ul>
-      </div>
-    </div>
-
-    <!-- COLUMN 2: Digital Design Engineer -->
-    <div style="flex: 1;">
-      <h4 style="margin-bottom: 2px; margin-top: 2px;">Digital Design Engineer</h4>
-      <div align="left">
-        <ul style="margin: 0; padding-left: 18px;">
-          <li>Co-designed hardware-software integration layers to map hardware IRQ lines to C-based ISRs.</li>
-          <li>Drove hardware-software co-verification across multiple SoC silicon spins, authoring low-level C validation suites to exercise custom IP blocks and verify MMIO register boundaries.</li>
-          <li>Investigated mixed-signal silicon noise injection via AMS/GLS co-simulation workflows, analyzing low-pass filter bandwidth adjustments and executing clock tree skew ECOs to eliminate SAR ADC sampling interference.</li>
-          <li>Co-developed 3 IP blocks compliant with SAE/ISO (automotive safety standards), by collaborating in the definition of hardware safety mechanisms (watchdogs, stack overflow detection, SEC-DED memory, CRC protection).</li>
-          <li>Developed a reusable <span id="work-item-1">[REDACTED]</span> testbench module in <b>SystemVerilog</b> utilizing OOP design principles (polymorphism, factory patterns), threading, and interprocess communication.</li>
-        </ul>
-      </div>
-    </div>
+  <div align="left">
+    <ul style="margin: 0; padding-left: 18px;">
+      <li>Engineered <b>bare-metal</b> C firmware for ARM Cortex-M microcontrollers, architecting <b>low-level</b> drivers, interrupt handlers, and MMIO register accesses across a device family with 11 unique spins.</li>
+      <li>Co-designed hardware-software integration layers to map hardware IRQ lines directly to C-based ISRs for deterministic, low-latency interrupt execution.</li>
+      <li>Architected custom linker scripts to partition and budget .bss, .data, and .stack memory sections, optimizing static memory allocations to operate within strict SRAM/ROM constraints (1 kB SRAM stack/data, 20 kB ROM program memory).</li>
+      <li>Drove hardware-software co-verification across multiple SoC silicon spins, authoring low-level C validation suites to exercise custom IP blocks and verify MMIO register boundaries.</li>
+      <li>Investigated mixed-signal silicon noise injection via AMS/GLS co-simulation workflows, analyzing low-pass filter bandwidth adjustments and executing clock tree skew ECOs to eliminate SAR ADC sampling interference.</li>
+      <li>Co-developed 3 IP blocks compliant with ISO 26262 and SAE automotive safety standards, defining hardware safety mechanisms and software diagnostics (watchdogs, stack overflow detection, SEC-DED memory, CRC protection).</li>
+      <li>Developed a reusable <span id="work-item-1">[REDACTED]</span> testbench module in <b>SystemVerilog</b> utilizing OOP design principles (polymorphism, factory patterns), threading, and interprocess communication.</li>
+      <li>Delivered bi-weekly production baselines meeting real-time constraints (1 ms latency from analog read to peripheral output; <span style="white-space: nowrap;">2<sup>&minus;16</sup> precision</span> without dedicated FPU).</li>
+    </ul>
   </div>
 
   <h2 style="margin-bottom: 3px; margin-top: 4px; display: flex; align-items: center; text-align: center; gap: 16px;">
@@ -122,20 +109,9 @@
     Education
     <span style="flex: 1; border-bottom: 2px solid rgba(0, 0, 0, 0.5);"></span>
   </h2>
-  <div style="display: flex; gap: 5px;">
-    <div style="flex: 1;">
+  <div align="center">
     <h3 style="margin-bottom: 1px; margin-top: 2px;"><span id="education-university">[UNIVERSITY]</span></h3>
-      <div align = "center">
-        BS in Electrical Engineering
-      </div>
-    </div>
-  
-    <div style="flex: 1;">
-    <h3 style="margin-bottom: 1px; margin-top: 2px;"><span id="education-community-college">[STATE COLLEGE]</span></h3>
-      <div align = "center">
-        Associate in Arts
-      </div>
-    </div>
+    <div>BS in Electrical Engineering</div>
   </div>
 
 </div>
