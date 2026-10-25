@@ -32,6 +32,10 @@
   .resume-container li {
     margin-bottom: 1px;
   }
+  code {
+    font-family: Consolas, monospace;
+    font-size: 11pt;
+  }
 </style>
 
 <div align="center" class="resume-container">
@@ -51,7 +55,7 @@
   </h2>
   <div align="left">
     <p style="margin: 2px 0;">
-      Firmware Architect specializing in <b>bare-metal</b> architecture and hardware-software interfaces for high-reliability embedded systems and SoCs. Proven track record leading low-level driver development, <b>register-boundary</b> co-verification, custom linker memory partitioning (.bss, .data, .stack), and deterministic interrupt pipelines across multiple silicon spins. Experienced in mixed-signal noise mitigation (AMS/GLS) and rigorous functional safety.
+      Firmware Architect specializing in bare-metal architecture and <b>hardware-software interfaces</b> for high-reliability embedded systems and SoCs. Proven track record leading low-level driver development, register-boundary co-verification, custom linker memory partitioning (.bss, .data, .stack), and deterministic interrupt pipelines across multiple silicon spins. Experienced in mixed-signal noise mitigation (AMS/GLS) and support of rigorous functional safety standards (<b>ASILD</b>).
     </p>
   </div>
 
@@ -66,7 +70,7 @@
       <div align="left">
         <ul style="margin: 0; padding-left: 18px;">
           <li><b>Languages & Verification:</b> Embedded C, SystemVerilog (OOP Testbenches), RISC Assembly, AMS/GLS Co-Simulation, Python, Shell (Bash).</li>
-          <li><b>Firmware & Drivers:</b> <b>Bare-Metal</b> Architecture, Linker Scripts (.bss, .data, .stack), Interrupt-Driven system design, MMIO Drivers, Serial Protocols (I2C, SPI, UART), RTOS.</li>
+          <li><b>Firmware & Drivers:</b> Bare-Metal Architecture, Linker Scripts (.bss, .data, .stack), Interrupt-Driven system design, MMIO Drivers, Serial Protocols (I2C, SPI, UART), RTOS.</li>
           <li><b>Software Engineering:</b> OOP Architecture, CI/CD (Bitbucket/Git), SDLC.</li>
         </ul>
       </div>
@@ -93,14 +97,15 @@
 
   <div align="left">
     <ul style="margin: 0; padding-left: 18px;">
-      <li>Engineered <b>bare-metal</b> C firmware for ARM Cortex-M microcontrollers, architecting <b>low-level</b> drivers, interrupt handlers, and MMIO register accesses across a device family with 11 unique spins.</li>
-      <li>Co-designed hardware-software integration layers to map hardware IRQ lines directly to C-based ISRs for deterministic, low-latency interrupt execution.</li>
-      <li>Architected custom linker scripts to partition and budget .bss, .data, and .stack memory sections, optimizing static memory allocations to operate within strict SRAM/ROM constraints (1 kB SRAM stack/data, 20 kB ROM program memory).</li>
-      <li>Drove hardware-software co-verification across multiple SoC silicon spins, authoring low-level C validation suites to exercise custom IP blocks and verify MMIO register boundaries.</li>
-      <li>Investigated mixed-signal silicon noise injection via AMS/GLS co-simulation workflows, analyzing low-pass filter bandwidth adjustments and executing clock tree skew ECOs to eliminate SAR ADC sampling interference.</li>
-      <li>Co-developed 3 IP blocks compliant with ISO 26262 and SAE automotive safety standards, defining hardware safety mechanisms and software diagnostics (watchdogs, stack overflow detection, SEC-DED memory, CRC protection).</li>
+      <li>Engineered bare-metal C firmware for <b>ARM Cortex-M</b> microcontrollers, architecting low-level drivers, interrupt handlers, and MMIO register accesses across a device family with 11 unique spins.</li>
+      <li>Co-designed hardware-software integration layers to map <b>hardware IRQ lines</b> directly to C-based ISRs for deterministic, low-latency interrupt execution.</li>
+      <li>Architected custom <b>linker scripts</b> to partition and budget .bss, .data, and .stack memory sections, optimizing static memory allocations to operate within strict SRAM/ROM constraints (1 kB SRAM stack/data, 20 kB ROM program memory).</li>
+      <li>Enforced strict embedded C architecture standards across the firmware team, utilizing <code>const restrict</code> pointers and <code>static const</code> memory allocations to optimize <b>MMIO access speeds</b>.</li>
+      <li>Directed hardware-software validation efforts as the <b>informal RTL verification lead</b>, aligning <b>AMS/GLS co-simulation</b> workflows to investigate mixed-signal noise injection and execute clock tree skew ECOs to eliminate SAR ADC sampling interference.</li>
+      <li>Drove <b>hardware-software co-verification</b> across multiple SoC silicon spins, authoring low-level C validation suites to exercise custom IP blocks and verify MMIO register boundaries.</li>
+      <li>Co-developed 3 IP blocks compliant with <b>ISO 26262 (ASIL)</b> and SAE automotive safety standards, defining hardware safety mechanisms and software diagnostics (watchdogs, stack overflow detection, SEC-DED memory, CRC protection).</li>
       <li>Developed a reusable <span id="work-item-1">[REDACTED]</span> testbench module in <b>SystemVerilog</b> utilizing OOP design principles (polymorphism, factory patterns), threading, and interprocess communication.</li>
-      <li>Delivered bi-weekly production baselines meeting real-time constraints (1 ms latency from analog read to peripheral output; <span style="white-space: nowrap;">2<sup>&minus;16</sup> precision</span> without dedicated FPU).</li>
+      <li>Delivered bi-weekly production baselines meeting <b>real-time constraints</b> (1 ms latency from analog read to peripheral output; <span style="white-space: nowrap;">2<sup>&minus;16</sup> precision</span> without dedicated FPU).</li>
     </ul>
   </div>
 
